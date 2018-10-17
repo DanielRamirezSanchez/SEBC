@@ -6,7 +6,7 @@ Create the user
         user DanielRamirezSanchez
         passwd githubuser
 
-The folder /user/DanielRamirezSanchez already exists and has all permissions (777) because of the previous excercie. That whas the folder I created as my destination for the distcp. I just change de owner.
+The folder /user/DanielRamirezSanchez already exists and has all permissions (777) because of the test done in the previous excercice. That whas the folder I created as my destination for the distcp. I just change de owner.
 
          sudo -u hdfs hdfs dfs -chown DanielRamirezSanchez /user/DanielRamirezSanchez
 
