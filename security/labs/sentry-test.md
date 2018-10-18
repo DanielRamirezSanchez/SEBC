@@ -189,6 +189,27 @@ Creating test roles and granting privilegies
 	INFO  : OK
 	No rows affected (0.122 seconds)
 
+Created roles
+
+	0: jdbc:hive2://sebc-vm2.westeurope.cloudapp.> show roles;
+	INFO  : Compiling command(queryId=hive_20181018163737_aa03061f-711f-4281-a65a-419a6b0c9c8d): show roles
+	INFO  : Semantic Analysis Completed
+	INFO  : Returning Hive schema: Schema(fieldSchemas:[FieldSchema(name:role, type:string, comment:from deserializer)], properties:null)
+	INFO  : Completed compiling command(queryId=hive_20181018163737_aa03061f-711f-4281-a65a-419a6b0c9c8d); Time taken: 0.099 seconds
+	INFO  : Executing command(queryId=hive_20181018163737_aa03061f-711f-4281-a65a-419a6b0c9c8d): show roles
+	INFO  : Starting task [Stage-0:DDL] in serial mode
+	INFO  : Completed executing command(queryId=hive_20181018163737_aa03061f-711f-4281-a65a-419a6b0c9c8d); Time taken: 0.065 seconds
+	INFO  : OK
+	+---------------+--+
+	|     role      |
+	+---------------+--+
+	| writes        |
+	| reads         |
+	| sentry_admin  |
+	+---------------+--+
+	3 rows selected (0.311 seconds)
+
+
 Show tables with test users
 
 	[daniramirez@sebc-vm2 ~]$ kinit george
