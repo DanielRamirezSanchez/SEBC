@@ -53,7 +53,7 @@ Restarted the services:
 
 And after that, the TLS Level 1 worked!
 
-Here is the config.ini of on of the agents:
+Here is the config.ini of one of the agents:
 
 	[daniramirez@sebc-vm2 jks]$ sudo cat /etc/cloudera-scm-agent/config.ini
 	[General]
