@@ -23,7 +23,7 @@ Tailing the log file, found:
 	        at com.cloudera.server.common.HttpConnectorServer.start(HttpConnectorServer.java:87)
 	        ... 4 more
 
-Honestlty, at this point I panicked. Tried to restore everything back to normal. Restore the use_tls=0 on the agents. But how to change the property that I had set to true inside Cloudera Manager? After some digging a while, found out the way to remove that configuration (the second command did the trick):
+Honestly, at this point I panicked. Tried to restore everything back to normal. Restore the use_tls=0 on the agents. But how to change the property that I had set to true inside Cloudera Manager? After some digging a while, found out the way to remove that configuration (the second command did the trick):
 
 	delete from CONFIGS where ATTR='web_tls';
 	delete from CONFIGS where ATTR='agent_tls'; 
