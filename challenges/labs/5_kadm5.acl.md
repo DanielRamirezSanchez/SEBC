@@ -1,2 +1,2 @@
-*/admin@DANIELRAMIREZSANCHEZ.SG      *
-cloudera-scm/admin@DANIELRAMIREZSANCHEZ.SG   *
+	*/admin@DANIELRAMIREZSANCHEZ.SG      *
+	cloudera-scm/admin@DANIELRAMIREZSANCHEZ.SG   *
