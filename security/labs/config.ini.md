@@ -39,6 +39,7 @@ For my second try, I did the following:
 	sudo $JAVA_HOME/bin/keytool -genkeypair -alias cmhost -keyalg RSA -keystore /opt/cloudera/security/jks/$(hostname -f).jks -keysize 2048 -dname "CN=$(hostname -f),OU=Security,O=ClearPeaks,L=Barcelona,ST=Barcelona,C=SP" -storepass cloudera -keypass cloudera
 
 After that, in Cloudera Manager went to the security settings and set up:
+
 	- "Use TLS Encryption for Agents" = true
 	- "Cloudera Manager TLS/SSL Server JKS Keystore File Location" = /opt/cloudera/security/jks/sebc-vm1.westeurope.cloudapp.azure.com.jks
 	- "Cloudera Manager TLS/SSL Server JKS Keystore File Password" = cloudera
